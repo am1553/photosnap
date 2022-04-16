@@ -1,0 +1,38 @@
+@import './IntroCardMedia';
+
+.home {
+    &__intro_card {
+        .mobile_image {
+            width: 100%;
+        }
+        .text_container {
+            position: relative;
+            .line {
+                width: 8rem;
+                height: 6px;
+                background: linear-gradient(5deg, #FFC593, #BC7198, #5A77FF);
+                position: absolute;
+                top: 0;
+                left: 2rem;
+            }
+            .text_wrapper {
+                padding: 5rem 2rem;
+                
+                p {
+                    margin: 1rem 0;
+                }
+
+                button {
+                    border: none;
+                    display: flex;
+                    height: 3rem;
+                    align-items: center;
+                    background: transparent;
+                    img {
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

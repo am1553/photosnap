@@ -1,0 +1,23 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $pure-white;
+    img {
+        display: block;
+    }
+    button {
+        cursor: pointer;
+    }
+    .invite_button {
+        background-color: $pure-black;
+        color: $pure-white;
+        height: 3rem;
+        border: none;
+    }
+}

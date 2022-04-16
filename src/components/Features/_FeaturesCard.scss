@@ -1,0 +1,22 @@
+.features_card {
+    text-align: center;
+    max-width: 30rem;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .image_wrapper {
+        height: 73px;
+        width: 73px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h3 {
+        margin: 2rem 0 0;
+    }
+    p {
+        margin: 1rem;
+    }
+}

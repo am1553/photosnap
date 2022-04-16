@@ -32,7 +32,7 @@ function IntroCard(
             <div className="text_wrapper">
                 <h1 style={ {color: textColor} }>{ title }</h1>
                 <p style={ {color: textColor, opacity: '0.5'} }>{ description }</p>
-                <button className={ buttonClassname }>
+                <button className={ buttonClassname } style={ button_text === null ? { display: 'none' } : null }>
                     <h4 style={ {color: textColor} }>{ button_text }</h4>
                     <ArrowImage isFilter={ isArrowFilter }/>
                 </button>

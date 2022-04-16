@@ -219,8 +219,6 @@ function StoriesContainer() {
                     title = { data.title }
                     artist = { data.artist }
                     date = { data.date }
-                    
-                    
                     />
                 )
             })

@@ -73,6 +73,10 @@ body .invite_button {
   }
 }
 
+.header img {
+  cursor: pointer;
+}
+
 .header nav {
   list-style: none;
 }
@@ -376,6 +380,8 @@ body .invite_button {
 
 .stories_card {
   position: relative;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .stories_card img {
@@ -444,6 +450,12 @@ body .invite_button {
 
 .stories_card .text_wrapper .button_wrapper button:nth-child(2) {
   padding: 0.5rem 0 0.5rem 0.5;
+}
+
+.stories_card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 1;
 }
 
 @media screen and (min-width: 580px) {
@@ -774,6 +786,15 @@ body .invite_button {
           filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(100%);
 }
 
+.footer img:hover {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+}
+
+.footer li {
+  cursor: pointer;
+}
+
 .footer .left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,6 +834,10 @@ body .invite_button {
 
 .footer .middle li {
   margin: 1rem 0;
+}
+
+.footer .middle li:hover {
+  text-decoration: underline;
 }
 
 .footer .right {

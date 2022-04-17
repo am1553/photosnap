@@ -6,7 +6,7 @@ function ArrowImage({ isFilter }) {
   return (
     <div>
         <img src={ ArrowImg } alt="" style={
-            isFilter === true ? {filter: arrowFilter} : console.log(false)
+            isFilter === true ? {filter: arrowFilter} : null
         }/>
     </div>
   )

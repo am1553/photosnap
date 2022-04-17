@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Logo from '../../assets/shared/desktop/logo.svg'
 
 import FaceBookLogo from '../../assets/shared/desktop/facebook.svg'
@@ -9,10 +10,11 @@ import InstagramLogo from '../../assets/shared/desktop/instagram.svg'
 import ArrowImage from '../ArrowImage/ArrowImage'
 
 function Footer() {
+    let navigate = useNavigate()
   return (
     <div className='footer'>
         <div className="left">
-            <img src={ Logo } alt="" className='footer_logo' />
+            <img src={ Logo } alt="" className='footer_logo' onClick={ () => {navigate("/")} }/>
             <div className="socials">
                 <ul>
                     <li>
@@ -35,10 +37,10 @@ function Footer() {
         </div>
         <div className="middle">
             <nav>
-                <li><h3>home</h3></li>
-                <li><h3>stories</h3></li>
-                <li><h3>features</h3></li>
-                <li><h3>pricing</h3></li>
+                <li onClick={ () => {navigate("/")} }><h3>home</h3></li>
+                <li onClick={ () => {navigate("/stories")} }><h3>stories</h3></li>
+                <li onClick={ () => {navigate("/features")} }><h3>features</h3></li>
+                <li onClick={ () => {navigate("/pricing")} }><h3>pricing</h3></li>
             </nav>
         </div>
         <div className="right">

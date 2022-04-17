@@ -1,6 +1,9 @@
 @import './HeaderMedia';
 .header {
     // common for all layouts
+    img {
+        cursor: pointer;
+    }
     nav {
         list-style: none;
         li {

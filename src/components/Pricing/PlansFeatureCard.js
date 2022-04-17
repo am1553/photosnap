@@ -4,6 +4,7 @@ import TickMark from '../../assets/pricing/desktop/check.svg'
 function PlansFeatureCard({title, isBasic, isPro, isBusiness}) {
   return (
     <div className='plans_feature__card'>
+        
         <div className="features_desktop">
             <h4>{ title }</h4>
             <div className="desktop_checklist">
